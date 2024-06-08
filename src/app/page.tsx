@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { FaTachometerAlt, FaKey, FaChartBar, FaCog, FaHome, FaRobot, FaPlug, FaDollarSign } from "react-icons/fa";
+
 import "./globals.css";
 
 export default function Home() {
@@ -20,19 +20,19 @@ export default function Home() {
         <nav className="flex-1 p-4">
           <ul>
             <li className="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded">
-              <FaHome className="mr-4" />
+              <span className="mr-4">🏠</span>
               {isSidebarOpen && <span>Overview</span>}
             </li>
             <li className="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded">
-              <FaRobot className="mr-4" />
+              <span className="mr-4">🤖</span>
               {isSidebarOpen && <span>Models</span>}
             </li>
             <li className="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded">
-              <FaPlug className="mr-4" />
+              <span className="mr-4">🔌</span>
               {isSidebarOpen && <span>Integrations</span>}
             </li>
             <li className="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded">
-              <FaDollarSign className="mr-4" />
+              <span className="mr-4">💵</span>
               {isSidebarOpen && <span>Billing</span>}
             </li>
           </ul>
